@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,146 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
-        *{
-            margin:0; padding:0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        body{
-            background-color: rgb(0,0,33);  color:antiquewhite;
+
+        body {
+            background-color: black;
+            color: antiquewhite;
             font-family: "Poppins", sans-serif;
         }
-        nav{
-            display: flex;  justify-content: space-around;  align-items: center;
-            height: 100px; background-color: rgb(19, 19, 65);
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(19, 19, 65);
         }
-        nav ul{
-            display: flex;  justify-content: center;
+
+        nav ul {
+            display: flex;
+            justify-content: center;
         }
-        nav ul li{
-            list-style: none;  margin: 0 23px;
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
         }
-        .left{
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(176, 153, 197);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
             font-size: 1.5rem;
         }
-        .firstSection{
-            display: flex;  justify-content: space-around;
-            margin: 23px 0; align-items: center;
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            align-items: center;
         }
-        .firstSection div{
+
+        .firstSection>div {
             width: 30%;
         }
-        .leftSection{ 
-              font-size: 3rem; 
-        }
-        .rightSection{
-              width:34px;
-        }
-        .rightSection img{
-              width: 120%; margin: 50px 0;
-        }
-        .purple{ color:rgb(171, 119, 219);}
 
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection {
+            width: 34px;
+        }
+
+        .rightSection img {
+            width: 120%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(171, 119, 219);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(171, 119, 219);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 60px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 115px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 99px;
+            width: 146px;
+            left: -70px;
+        }
+
+        .vertical-des {
+            position: relative;
+            color: gray;
+            width: 150px;
+            top: 106px;
+            font-size: 10px;
+            left: -70px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="left">Yash's Portfolio</div>
             <div class="right">
                 <ul>
-                    <a href ="/"><li>Home</li></a>
-                    <a href ="/"><li>About</li></a>
-                    <a href ="/"><li>Projects</li></a>
-                    <a href ="/"><li>Contact</li></a>
-                    <a href ="/"><li>Certifications</li></a>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Certifications</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,13 +156,74 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                I am <span class ="purple">Yash Kumar</span>
+                I am <span class="purple">Yash Kumar</span>
+                <div>and I am Intrested In </div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="1.png">
             </div>
         </section>
-    </main>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have Learnt so far</span>
+            <h1>Learning Experience</h1>
 
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        JAVA
+                    </div>
+                    <div class="vertical-des">
+                        Completed a certified course on JAVA from NPTEL which focused on OOPs and Core JAVA.
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    <div class="vertical-title">
+                        DATA STRUCTURE & ALGORITHM 
+                    </div>
+                    <div class="vertical-des">
+                        Completed a course on Data Structures and Algorithm using JAVA from GeeksOfGeeks which helps in making and using Space and Time efficient algorithms.
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    <div class="vertical-title">
+                        WEB DEVELOPMENT
+                    </div>
+                    <div class="vertical-des">
+                        Learnt aout use of HTML , CSS , JAVASCRIPT for making responsive websites.
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    <div class="vertical-title">
+                         PYTHON and MACHINE LEARNING
+                    </div>
+                    <div class="vertical-des"> </div>
+                </div>
+                
+                <div class="vertical">
+                    <div class="vertical-title">
+                        DATA SCIENCE
+                    </div>
+                    <div class="vertical-des"> </div>
+                </div>
+
+                
+               
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Structure and Algorithms', 'Web Development', 'Machine Learning'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
-</html> 
+
+</html>
